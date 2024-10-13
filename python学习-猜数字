@@ -1,0 +1,26 @@
+import random
+num = random.randint(1,10)
+guess_num = int(input("第一次猜"))
+if guess_num == num:
+    print("一次就猜对，真棒!")
+else:
+    if guess_num > num:
+        print("大了，再猜一次")
+    else:
+        print("小了，再猜一次")
+    guess_num = int(input("第二次猜"))
+    if guess_num == num:
+        print("两次就猜对，真棒!")
+    else:
+        if guess_num > num:
+            print("大了，再猜一次")
+        else:
+            print("小了，再猜一次")
+        guess_num = int(input("第三次猜"))
+        if guess_num == num:
+            print("猜对了，真棒!")
+        else:
+             if guess_num > num:
+                print(f"大了，没有猜中，答案是{num}")
+             else:
+                print(f"小了，没有猜中，答案是{num}")
